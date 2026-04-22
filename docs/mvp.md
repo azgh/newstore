@@ -67,4 +67,3 @@ But the branding, layout rhythm, and components should be original rather than a
 - Users can browse and purchase smoothly.
 - Stripe checkout works end to end.
 - The storefront feels premium on mobile and desktop.
-

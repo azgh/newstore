@@ -77,4 +77,3 @@ Typical early-stage stack:
 - object storage if needed
 
 This is generally lower complexity and lower cost than running a Medusa backend plus its supporting services.
-

@@ -102,4 +102,3 @@ Payload fills that gap well without adding the full weight of a dedicated commer
 - Use Stripe Checkout first, not custom on-site card forms.
 - Add webhooks early so order state stays reliable.
 - Keep cart logic simple in MVP.
-
