@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --background: #f7f1e6;
+  --foreground: #181512;
+  --color-cream: #f7f1e6;
+  --color-paper: rgba(255, 251, 245, 0.78);
+  --color-paper-strong: #fffaf3;
+  --color-ink: #181512;
+  --color-soft-ink: #5e5347;
+  --color-muted: #8f7c69;
+  --color-accent: #b7845d;
+  --color-accent-soft: rgba(183, 132, 93, 0.16);
+  --color-border: rgba(24, 21, 18, 0.1);
+  --color-border-strong: rgba(24, 21, 18, 0.22);
+  --shadow-soft: 0 24px 60px rgba(72, 51, 35, 0.08);
+  --grid-fade: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(247, 241, 230, 0.92) 100%
+  );
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans-ui);
+  --font-mono: var(--font-mono-ui);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f7f1e6;
+    --foreground: #181512;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  background-image:
+    radial-gradient(circle at top left, rgba(183, 132, 93, 0.12), transparent 22rem),
+    radial-gradient(circle at top right, rgba(75, 66, 52, 0.08), transparent 24rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+  font-family: var(--font-sans-ui), Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(183, 132, 93, 0.28);
+}
+
+.font-display {
+  font-family: var(--font-serif-display), "Times New Roman", serif;
+}
